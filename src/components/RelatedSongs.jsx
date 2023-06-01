@@ -8,12 +8,9 @@ const RelatedSongs = ({
   handlePlayClick,
   artistId,
 }) => {
-  console.log(data);
-  console.log(typeof data);
   const finalData = Object.keys(data).map((obj) => {
     return data[obj];
   });
-  console.log(finalData);
   return (
     <div className="flex flex-col ">
       <h1 className="font-bold text-3xl text-white">Related Songs : </h1>
